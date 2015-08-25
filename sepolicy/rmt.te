@@ -31,3 +31,4 @@ allow rmt ctl_rmt_prop:property_service set;
 
 allow rmt self:process execmem;
 allow rmt self:capability dac_override;
+
