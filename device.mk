@@ -29,6 +29,8 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
+    lights.geehrc \
+    camera.geehrc \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
@@ -257,6 +259,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	 telephony.lteOnCdmaDevice=1 \
         telephony.lteOnGsmDevice=1 \
+		ro.telephony.ril_class=geesprRIL \
         ro.telephony.default_network=10 \
         ro.ril.def.preferred.network=10 \
 	 ril.subscription.types=NV,RUIM

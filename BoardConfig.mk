@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_SPECIFIC_HEADER_PATH := device/lge/geehrc/include
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -105,6 +107,8 @@ TARGET_NO_RPC := true
 TARGET_PROVIDES_GPS_LOC_API := true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/geehrc
+
+BOARD_RIL_CLASS := ../../../device/lge/geehrc/ril/
 
 BOARD_SEPOLICY_DIRS += \
        device/lge/geehrc/sepolicy
