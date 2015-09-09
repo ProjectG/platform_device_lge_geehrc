@@ -55,7 +55,6 @@ on charger-fs
 
 on fs
     mount_all ./fstab.geehrc
-    restorecon_recursive /persist
     setprop ro.crypto.fuse_sdcard true
 
 on early-boot
@@ -181,7 +180,6 @@ on post-fs-data
     mkdir /data/system/sensors
     chmod 665 /data/system/sensors
     write /data/system/sensors/settings 1
-    restorecon /data/system/sensors/settings
     chmod 660 /data/system/sensors/settings
 
     # AKM setting data
